@@ -1,10 +1,22 @@
-# Deep Q-Learning Network  
-**********
+## Deep Q-Learning Network  
+
 
 This repository illustrate and provide the entire code for a Deep Q-Learning Network for creating an autonomous agent which collects bananas into the Unity env.
 
-## Dependencies
-**********
+# Problem Description
+
+The Agent is in charge of collect bananas in a large, square world. In this environment, the bananas have two different colors: blue and yellow. The Agent aquires a value of +1 for each yeallow banana, and a reward of -1 for each blue banana. The main goal, as a reinforcement learning problem is to maximaze the final reward. This means that the Agent needs to collect only yellow bananas. 
+
+![Alt Text](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/June/5b1ab4b0_banana/banana.gif)
+
+The space is provided as a tuple of 37 dimensions. Each dimension ranges between [0,1], with features refering to agent's velocity and ray-based perception of objects around the agent's forward direction. Four discrete actions are available, corresponding to:
+
+- 0 - move forward.
+- 1 - move backward.
+- 2 - turn left.
+- 3 - turn right.
+
+# Dependencies
 
 To set up your python environment to run the code in this repository, follow the instructions below.
 
@@ -26,18 +38,32 @@ To set up your python environment to run the code in this repository, follow the
 	- Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
 	
 3. Clone the repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
+
 ```bash
 git clone https://github.com/udacity/deep-reinforcement-learning.git
 cd deep-reinforcement-learning/python
 pip install .
 ```
-
 4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `drlnd` environment.  
 ```bash
 python -m ipykernel install --user --name drlnd --display-name "drlnd"
 ```
 
 5. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
+
+# PyTorch
+
+The model has been developed using PyTorch library. The Pytorch library is available over the main page: https://pytorch.org/
+
+Through the usage of Anaconda, you can download directly the pytorch and torchvision library with 
+
+```bash
+conda install pytorch torchvision -c pytorch
+```
+
+# Results
+
+The plot below illustrates the increasing rewards associated to the Agent performance into the Unity Environment.
 
 
 
