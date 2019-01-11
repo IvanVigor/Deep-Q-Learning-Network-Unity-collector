@@ -55,7 +55,7 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 The model has been developed using PyTorch library. The Pytorch library is available over the main page: https://pytorch.org/
 
-Through the usage of Anaconda, you can download directly the pytorch and torchvision library with 
+Through the usage of Anaconda, you can download directly the pytorch and torchvision library. 
 
 ```bash
 conda install pytorch torchvision -c pytorch
