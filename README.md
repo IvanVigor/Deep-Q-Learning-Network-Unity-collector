@@ -65,6 +65,10 @@ conda install pytorch torchvision -c pytorch
 
 The plot below illustrates the increasing rewards associated to the Agent performance into the Unity Environment.
 
+# Licence
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ 
 
 
 
