@@ -1,9 +1,9 @@
-## Deep Q-Learning Network  
+# Deep Q-Learning Network  
 
 
 This repository illustrate and provide the entire code for a Deep Q-Learning Network for creating an autonomous agent which collects bananas into the Unity env.
 
-# Problem Description
+##  Problem Description
 
 The Agent is in charge of collect bananas in a large, square world. In this environment, the bananas have two different colors: blue and yellow. The Agent aquires a value of +1 for each yeallow banana, and a reward of -1 for each blue banana. The main goal, as a reinforcement learning problem is to maximaze the final reward. This means that the Agent needs to collect only yellow bananas. 
 
@@ -16,7 +16,7 @@ The space is provided as a tuple of 37 dimensions. Each dimension ranges between
 - 2 - turn left.
 - 3 - turn right.
 
-# Dependencies
+##  Dependencies
 
 To set up your python environment to run the code in this repository, follow the instructions below.
 
@@ -51,7 +51,7 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 5. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
 
-# PyTorch
+##  PyTorch
 
 The model has been developed using PyTorch library. The Pytorch library is available over the main page: https://pytorch.org/
 
@@ -61,18 +61,18 @@ Through the usage of Anaconda, you can download directly the pytorch and torchvi
 conda install pytorch torchvision -c pytorch
 ```
 
-# File Description
+## File Description
 
 There are 4 files: 
 - model.py: Agent PyTorch neural network.
 - Navigation.ipynb: Jupyter notebook which illustrates the sequence of actions for creating the Agent.
 - dqn_agent.py: DQN Class and training section.
 
-# Results
+##  Results
 
 The plot below illustrates the increasing rewards associated to the Agent performance into the Unity Environment.
 
-# Licence
+##  Licence
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  
