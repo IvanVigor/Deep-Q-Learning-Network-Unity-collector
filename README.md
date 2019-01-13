@@ -61,6 +61,13 @@ Through the usage of Anaconda, you can download directly the pytorch and torchvi
 conda install pytorch torchvision -c pytorch
 ```
 
+# File Description
+
+There are 4 files: 
+- model.py: Agent PyTorch neural network.
+- Navigation.ipynb: Jupyter notebook which illustrates the sequence of actions for creating the Agent.
+- dqn_agent.py: DQN Class and training section.
+
 # Results
 
 The plot below illustrates the increasing rewards associated to the Agent performance into the Unity Environment.
