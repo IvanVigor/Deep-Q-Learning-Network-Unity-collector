@@ -61,7 +61,12 @@ Through the usage of Anaconda, you can download directly the pytorch and torchvi
 conda install pytorch torchvision -c pytorch
 ```
 
-## File Description
+## Additional Libraries
+
+In addition to PyTorch, in this repository has been used also Numpy. The 
+
+
+## Files Description
 
 There are 4 files: 
 - model.py: Agent PyTorch neural network.
@@ -69,12 +74,18 @@ There are 4 files:
 - dqn_agent.py: DQN Class and training section.
 - report.pdf: A small description of the code used in this Github repository
 
+There is a directory of pictures with the results achieved.
+
 ##  Results
 
 The plot below illustrates the increasing rewards associated to the Agent performance into the Unity Environment.
 
+![results](https://github.com/IvanVigor/Deep-Q-Learning-Network-Unity-collector/blob/master/pictures/DQN_Agent_Performances.png)
+
+The average of the results (orange line) reaches a value equal to 15 at 1800 epochs.
+
 ##  Licence
-The code is provided with MIT licence.
+The code is provided with MIT licence 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  
 ## Author
