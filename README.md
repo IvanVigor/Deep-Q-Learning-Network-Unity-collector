@@ -67,15 +67,19 @@ There are 4 files:
 - model.py: Agent PyTorch neural network.
 - Navigation.ipynb: Jupyter notebook which illustrates the sequence of actions for creating the Agent.
 - dqn_agent.py: DQN Class and training section.
+- report.pdf: A small description of the code used in this Github repository
 
 ##  Results
 
 The plot below illustrates the increasing rewards associated to the Agent performance into the Unity Environment.
 
 ##  Licence
-
+The code is provided with MIT licence.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  
+## Author
+Ivan Vigorito
+
 
 
 
