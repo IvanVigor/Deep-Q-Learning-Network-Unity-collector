@@ -76,8 +76,8 @@ There are 4 files:
 
 There is a directory of pictures with the results achieved.
 
-##  Licence
-The code is provided with MIT licence 
+##  License
+The code is provided with MIT license 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  
 ## Author
