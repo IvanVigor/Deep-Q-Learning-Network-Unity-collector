@@ -16,7 +16,8 @@ This method is based on the usage of a deep neural network for selecting the bes
 
 ![results](https://github.com/IvanVigor/Deep-Q-Learning-Network-Unity-collector/blob/master/pictures/CodeCogsEqn.svg)
 
-The classical model of this Deep Q-Learning Network can be seen in the picture below. As you can see, the network visualizes as input the frames of the environment and then provide a distribution over all the possible actions. For this implementation, we used a two hidden layer architecture. For each hidden layer, we used `64` hidden units with ReLU activation function. The input sample has `37` features and the output has `4` dimensions (one for each action). 
+The classical model of this Deep Q-Learning Network can be seen in the picture below (picture extracted from "Human-level control through deep reinforcement" - `doi:10.1038/nature14236`
+learning. As you can see, the network visualizes as input the frames of the environment and then provide a distribution over all the possible actions. For this implementation, we used a two hidden layer architecture. For each hidden layer, we used `64` hidden units with ReLU activation function. The input sample has `37` features and the output has `4` dimensions (one for each action). 
 
 At each state, the model needs to find out the best trade-off between the exploration and exploitation policy. As we said previously, the Agent needs to maximize the final reward. On one hand, the Agent needs to increase the final reward as much as possible. On the other hand, the Agent should explore new paths for the identification of new valuable paths. This is simply done with a random selection of the action for each state with a probability expressed by a variable epsilon.
 
@@ -35,6 +36,7 @@ Replay Memory avoids learning from a highly correlated temporal sequence of stat
 The learning sequence may be not stable if we learn a guess from a guess. According to that, the weights are compared with a fixed value for a sequence of steps. 
 
 ## HyperParameters
+
 * `eps_start=1.0, eps_end=0.01, eps_decay=0.995  # Starting epsilon value, minimum value and decay` 
 * `BUFFER_SIZE = int(1e5)  # replay buffer size`
 * `BATCH_SIZE = 64         # minibatch size`
