@@ -34,6 +34,15 @@ Replay Memory avoids learning from a highly correlated temporal sequence of stat
 
 The learning sequence may be not stable if we learn a guess from a guess. According to that, the weights are compared with a fixed value for a sequence of steps. 
 
+## HyperParameters
+* `eps_start=1.0, eps_end=0.01, eps_decay=0.995  # Starting epsilon value, minimum value and decay` 
+* `BUFFER_SIZE = int(1e5)  # replay buffer size`
+* `BATCH_SIZE = 64         # minibatch size`
+* `GAMMA = 0.99            # discount factor`
+* `TAU = 1e-3              # for soft update of target parameters`
+* `LR = 5e-4               # learning rate `
+* `UPDATE_EVERY = 4        # how often to update the network (do not decrease this value)` 
+
 ##  Results
 
 The plot below illustrates the increasing rewards associated with the Agent performance into the Unity Environment.
@@ -45,9 +54,9 @@ The average of the results (orange line) reaches a value equal of `16` at `800` 
 
 Possible future activities for improving the performances:
 
-* Replay Buffer with a similarity detection of past samples - Local Fusion approach.
+* Replay Buffer with a similarity detection of past episodes - Local Fusion approach.
 
-* Double DQN 
+* Duelling DQN 
 
 * CNN Agent for understanding from Pixels of the environment state. 
 
