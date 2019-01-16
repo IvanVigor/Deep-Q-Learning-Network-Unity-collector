@@ -37,7 +37,7 @@ The learning sequence may be not stable if we learn a guess from a guess. Accord
 ##  Results
 
 The plot below illustrates the increasing rewards associated with the Agent performance into the Unity Environment.
-The average of the results (orange line) reaches a value equal of 15 at 1800 epochs.
+The average of the results (orange line) reaches a value equal of 16 at 800 epochs.
 
 ![results](https://github.com/IvanVigor/Deep-Q-Learning-Network-Unity-collector/blob/master/pictures/performance.png)
 
