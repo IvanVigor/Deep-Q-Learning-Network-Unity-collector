@@ -10,7 +10,7 @@ The agent is in charge of choosing the best action for every position. The Q-tab
 
 This matrix can be easily associated with a discrete space, where the values do not continue. In this latter, the best solution that can be adopted is an approximation of the best action to select. In order to face this problem for our banana environment, we used the Deep Q-Learning approach.
 
-# Deep Q-Learning
+## Deep Q-Learning
 
 This method is based on the usage of a deep neural network for selecting the best action. The neural network works using the Bellman Equation of Q-Learning:
 
@@ -18,7 +18,7 @@ This method is based on the usage of a deep neural network for selecting the bes
 
 The classical model of this Deep Q-Learning Network can be seen in the picture below. As you can see, the network visualizes as input the frames of the environment and then provide a distribution over all the possible actions. For this implementation, we used a two hidden layer architecture. For each hidden layer, we used `64` hidden units with ReLU activation function. The input sample has `37` features and the output has `4` dimensions (one for each action). 
 
-At each sate, the model needs to find out the best trade-off between the exploration and exploitation policy. As we said previously, the Agent needs to maximize the final reward. On one hand, the Agent needs to increase the final reward as much as possible, on the other hand, the Agent should explore new paths for the identification of new valuable paths. This is simply done with a random selection of the action for each state with a probability expressed by a variable epsilon.
+At each state, the model needs to find out the best trade-off between the exploration and exploitation policy. As we said previously, the Agent needs to maximize the final reward. On one hand, the Agent needs to increase the final reward as much as possible. On the other hand, the Agent should explore new paths for the identification of new valuable paths. This is simply done with a random selection of the action for each state with a probability expressed by a variable epsilon.
 
 The probability to take a random action decrease progressively according to these parameters:
 `eps_start=1.0, eps_end=0.01, eps_decay=0.995`
@@ -37,7 +37,7 @@ The learning sequence may be not stable if we learn a guess from a guess. Accord
 ##  Results
 
 The plot below illustrates the increasing rewards associated with the Agent performance into the Unity Environment.
-The average of the results (orange line) reaches a value equal of `16` at `800` epochs.
+The average of the results (orange line) reaches a value equal of `16` at `800` epochs. 
 
 ![results](https://github.com/IvanVigor/Deep-Q-Learning-Network-Unity-collector/blob/master/pictures/performance.png)
 
@@ -50,9 +50,4 @@ Possible future activities for improving the performances:
 * Double DQN 
 
 * CNN Agent for understanding from Pixels of the environment state. 
-
-
-
-
-
 
