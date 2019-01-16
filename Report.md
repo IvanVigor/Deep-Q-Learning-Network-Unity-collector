@@ -4,7 +4,7 @@ The report provides an overview of the main concepts faced during this project.
 
 ## Reinforcement Learning Framework
 
-In this reinforcement learning scenario, the agent's goal is to maximize the expected cumulative reward. The reward can be accumulated by collecting yellow bananas. The state is expressed through a tuple of 37 values. The Agent can provide 4 different actions. 
+In this reinforcement learning scenario, the agent's goal is to maximize the expected cumulative reward. The reward can be accumulated by collecting yellow bananas. The state is expressed through a tuple of `37` values. The Agent can provide `4` different actions. 
 
 The agent is in charge of choosing the best action for every position. The Q-table aims to define for each state, the reward associated with each action. This Q-Table can be visualized as a matrix, which a reward is assigned to each action for every possible state. 
 
@@ -16,7 +16,7 @@ This method is based on the usage of a deep neural network for selecting the bes
 
 ![results](https://github.com/IvanVigor/Deep-Q-Learning-Network-Unity-collector/blob/master/pictures/CodeCogsEqn.svg)
 
-The classical model of this Deep Q-Learning Network can be seen in the picture below. As you can see, the network visualizes as input the frames of the environment and then provide a distribution over all the possible actions. For this implementation, we used a two hidden layer architecture. For each hidden layer, we used 64 hidden units with ReLU activation function. The input sample has 37 features and the output has 4 dimensions (one for each action). 
+The classical model of this Deep Q-Learning Network can be seen in the picture below. As you can see, the network visualizes as input the frames of the environment and then provide a distribution over all the possible actions. For this implementation, we used a two hidden layer architecture. For each hidden layer, we used `64` hidden units with ReLU activation function. The input sample has `37` features and the output has `4` dimensions (one for each action). 
 
 At each sate, the model needs to find out the best trade-off between the exploration and exploitation policy. As we said previously, the Agent needs to maximize the final reward. On one hand, the Agent needs to increase the final reward as much as possible, on the other hand, the Agent should explore new paths for the identification of new valuable paths. This is simply done with a random selection of the action for each state with a probability expressed by a variable epsilon.
 
@@ -37,7 +37,7 @@ The learning sequence may be not stable if we learn a guess from a guess. Accord
 ##  Results
 
 The plot below illustrates the increasing rewards associated with the Agent performance into the Unity Environment.
-The average of the results (orange line) reaches a value equal of 16 at 800 epochs.
+The average of the results (orange line) reaches a value equal of `16` at `800` epochs.
 
 ![results](https://github.com/IvanVigor/Deep-Q-Learning-Network-Unity-collector/blob/master/pictures/performance.png)
 
