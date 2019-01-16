@@ -83,6 +83,10 @@ There is a directory of pictures with the results achieved.
 ##  License
 The code is provided with MIT license 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
- 
+
+## Acknowledgements
+
+I would like to express my gratitude to the Udacity community for sharing ideas and helpful sources of code.
+
 ## Author
 Ivan Vigorito
